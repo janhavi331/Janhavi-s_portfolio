@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janhavi's portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(222, 222, 223);
+            color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(2, 2, 82);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+
+            list-style-type: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: lavender;
+            font-size: 1.01rem;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 0px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+
+        }
+
+        .leftsection {
+
+            font-size: 2rem;
+            color: rgb(2, 2, 82);
+            margin: 200px 0;
+
+        }
+
+        < !-- #region .leftsection>div {
+
+            width: 30px;
+        }
+
+        -->.rightsection div {
+            background-color: rgb(15, 17, 18);
+            width: 30px;
+        }
+
+        .rightsection {
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+
+        .rightsection img {
+            width: 550px;
+            display: block;
+            margin: 50px px;
+        }
+
+        #element {
+            color: rgb(71, 89, 162);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            color: rgb(2, 2, 82);
+            margin: auto;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: rgba(173, 170, 170, 0.434);
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .secondsection h2 {
+            font-size: 2.2rem;
+            color: rgb(2, 2, 82);
+            margin-bottom: 20px;
+        }
+
+        .secondsection p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .secondsection {
+            border-left: 6px solid rgb(2, 2, 82);
+        }
+
+        .secondsection:hover {
+            transform: translateY(-5px);
+            transition: 0.3s ease;
+        }
+
+        .thirdsection {
+            max-width: 80vw;
+            margin: 60px auto;
+        }
+
+        .thirdsection h2 {
+            font-size: 2.2rem;
+            color: rgb(2, 2, 82);
+            margin-bottom: 30px;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background-color: rgba(173, 170, 170, 0.434);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: rgb(2, 2, 82);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            background-color: rgba(173, 170, 170, 0.434);
+        }
+        .fourthsection {
+    max-width: 80vw;
+    margin: 60px auto;
+}
+
+.fourthsection h2 {
+    font-size: 2.2rem;
+    color: rgb(2, 2, 82);
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background-color:rgba(173, 170, 170, 0.434);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card h3 {
+    color: rgb(2, 2, 82);
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: rgb(71, 89, 162);
+    font-weight: 500;
+}
+.fifthsection {
+    max-width: 80vw;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: rgba(173, 170, 170, 0.434);
+    color:rgb(2, 2, 82);
+    border-radius: 12px;
+}
+
+.fifthsection h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color:rgb(2, 2, 82);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.footer {
+    background-color: rgb(2, 2, 82);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.footer-links a {
+    color: #cfd8ff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Janhavi's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</li></a>
+                    <li><a href="/">About Me</li></a>
+                    <li><a href="/">Skills</li></a>
+                    <li><a href="/">Projects</li></a>
+                    <li>
+    <a href="janhavicv.pdf" target="_blank">
+        Resume
+    </a>
+</li>
+
+                    <li><a href="/">Contact</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div>Hi, I’m Janhavi Mane</div>
+                <div>A Computer Engineering </div>
+                <div>student Passionate about </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="bg1.png" alt="">
+            </div>
+
+        </section>
+        <section class="secondsection">
+
+            <h2>About me </h2>
+            <p>
+                I am a Computer Engineering student with a strong interest in software development
+                and problem-solving. I enjoy working with C++ and Java, and I have a solid
+                understanding of Data Structures and Object-Oriented Programming.
+            </p>
+            <p>
+                I am continuously improving my skills by practicing coding problems and building
+                small projects. I am eager to learn new technologies and looking for opportunities
+                where I can grow as a software developer.
+            </p>
+        </section>
+        <section class="thirdsection">
+            <h2>Skills</h2>
+
+            <div class="skills-container">
+                <div class="skill-card">C++ (STL, OOPS)</div>
+                <div class="skill-card">Java (OOPS, Basics)</div>
+                <div class="skill-card">Data Structures</div>
+                <div class="skill-card">Problem Solving</div>
+                <div class="skill-card">HTML & CSS</div>
+                <div class="skill-card">Git & GitHub</div>
+            </div>
+        </section>
+        <section class="fourthsection">
+            <h2>Projects</h2>
+
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        A personal portfolio website built using HTML and CSS to showcase
+                        my skills, projects, and contact details.
+                    </p>
+                    <p><strong>Tech:</strong> HTML, CSS</p>
+                    <a href="https://github.com/your-username/portfolio" target="_blank">
+                        View on GitHub
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h3>AgriFarm Waste Management System</h3>
+                    <p>
+                        A web-based project focused on organizing and identifying different types of
+                        agricultural waste. The system helps farmers understand waste categories and
+                        provides basic guidance to avoid harmful disposal practices.
+                    </p>
+                    <p><strong>Tech:</strong> HTML, CSS, JavaScript, C++, JSON</p>
+                    <a href="https://github.com/AgriFarmManagement/FarmwasteManagement" target="_blank">
+                        View on GitHub
+                    </a>
+                </div>
+
+
+                <div class="project-card">
+                    <h3>Student Record Management</h3>
+                    <p>
+                        A basic console-based application to manage student records such as
+                        name, roll number, and marks.
+                    </p>
+                    <p><strong>Tech:</strong>Java</p>
+                    <a href="https://github.com/janhavi331/codesoft/blob/main/TASK3StudentManagementSystem.java" target="_blank">
+                        View on GitHub
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <section class="fifthsection">
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+        <p>
+            I am open to internship and entry-level opportunities.  
+            Feel free to reach out to me.
+        </p>
+       
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> manejanhavi198@gmail.com</p>
+            <p><strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/janhavi-mane-151676350/" target="_blank">
+                    linkedin.com/in/Janhavimane
+                </a>
+            </p>
+            <p><strong>GitHub:</strong>
+                <a href="https://github.com/janhavi331" target="_blank">
+                    github.com/janhavi331
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['C++ Coding', 'Java Devlopment', 'Web Devlopement', 'Problem-Solving'],
+            typeSpeed: 80,
+        });
+    </script>
+    <footer class="footer">
+    <p>© 2026 Janhavi Mane | All Rights Reserved</p>
+    <div class="footer-links">
+        <a href="https://github.com/janhavi331" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/janhavi-mane-151676350/" target="_blank">LinkedIn</a>
+    </div>
+</footer>
+
+</body>
+
+</html>
